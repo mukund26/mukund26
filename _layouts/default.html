@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="{{ '/' | absolute_url }}">Home</a></li>
+                <li><a href="{{ '/content/car-reviews.html' | absolute_url }}">Car Reviews</a></li>
+                <li><a href="{{ '/content/novel-reviews.html' | absolute_url }}">Novel Reviews</a></li>
+                <li><a href="{{ '/content/philosophies.html' | absolute_url }}">Philosophies</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            {{ content }}
+        </main>
+    </div>
+</body>
+
+</html>
